@@ -1,7 +1,1 @@
-PARA MAÑANA NECESITO TERMINAS LA MODAL PARA CONTACTAR 
-LA PARTE LOGICA 
-DE JS Y LISTO
-:)
-
-btn_close_modal-info-contact
-modalInfoContact
+Todo piola che
