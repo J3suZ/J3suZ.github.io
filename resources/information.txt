@@ -1,0 +1,114 @@
+﻿TW= https://twitter.com/crvideogol
+IG= https://www.instagram.com/crvideogol/
+YT= www.youtube.com/channel/UCy1lbA3Mm60Oe2T1-c2rwug
+FB= https://www.facebook.com/Crvideogol-2395296040703860
+
+Coaching
+Videos
+Analisis
+Promocion
+
+
+
+COLLAPSE: 
+https://getbootstrap.com/docs/4.0/components/collapse/
+
+SVG'S:
+https://undraw.co/illustration	
+
+Somos una Agencia de Scouting.
+
+Nos Dedicamos a captacion, seguimiento y 
+promocion de  futbolistas profesionales,
+juveniles y prejuveniles en toda latinoamerica.
+
+Ofrecemos, Promocion a traves de produccion de Videos,
+seguimiento y analisis de rendimiento, marketing, asesorias,
+coaching.
+
+Y Video analisis de Equipos.
+
+Nuestra Vision y ser vehiculo en el crecimiento profesional
+del futbolista y junto a nuestro acompañamiento y 
+satisfaccion de nuestro trabajo alcanze la evolucion en su 
+carrera como futbolista.
+
+primary: #0C385A
+secondary: #0178CB
+info: #008EF5
+
+
+
+
+<div class="row px-sm-3 justify-content-between align-items-center my-sm-2">
+            <div class="col-md-5">
+                <h5 class="text-primary">Some texto to prove</h5>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore aut facere hic distinctio quae modi
+                    sed nihil amet, praesentium quos eum repellat placeat. Minima laboriosam voluptatum excepturi nihil
+                    architecto maiores?
+                </p>
+                <div class="row gap-sm-1 px-2">
+                    <button class="col-sm-5 btn btn-primary rounded shadow mb-2">Contactanos!</button>
+                    <button class="col-sm-5 btn btn-outline-primary rounded shadow mb-2">Contactanos!</button>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <h5 class="text-primary">Nuevo video:</h5>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis consequuntur, labore optio
+                    obcaecati dolorum soluta nesciunt voluptate asperiores exercitationem odit, quaerat sit! Quas fugiat
+                    eius non officiis deleniti odio pariatur, numquam, officia sequi soluta nam ducimus error! Ratione
+                    iste incidunt quia nemo illo eius dolor eligendi facere.
+                </p>
+            </div>
+        </div>
+        <div class="row px-sm-3 align-items-center my-sm-2">
+            <div class="col-md-5">
+                <h5 class="text-primary">Some texto to prove</h5>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore aut facere hic distinctio quae modi
+                    sed nihil amet, praesentium quos eum repellat placeat. Minima laboriosam voluptatum excepturi nihil
+                    architecto maiores?
+                </p>
+                <div class="row gap-sm-1 px-2">
+                    <button class="col-sm-5 btn btn-primary rounded shadow mb-2">Contactanos!</button>
+                    <button class="col-sm-5 btn btn-outline-primary rounded shadow mb-2">Contactanos!</button>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <h5 class="text-primary">Nuevo video:</h5>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis consequuntur, labore optio
+                    obcaecati dolorum soluta nesciunt voluptate asperiores exercitationem odit, quaerat sit! Quas fugiat
+                    eius non officiis deleniti odio pariatur, numquam, officia sequi soluta nam ducimus error! Ratione
+                    iste incidunt quia nemo illo eius dolor eligendi facere.
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/XH8DXJoGAfo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    <iframe class="w-100" height="200px" src="https://www.youtube.com/embed/0MvQGNl9QWw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    <iframe class="w-100" height="200px" src="https://www.youtube.com/embed/r39M9k9o89c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    <iframe class="w-100" height="200px" src="https://www.youtube.com/embed/42P30asJYyU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    
+
+    ESTE ES LA IMAGEN DEL VIDEO!!!!!!!!!
+
+     <!-- <img title="Reproducir video" id="posterVod" src="./resources/img/crvideogol-logo-1.jpg"
+                    class="position-absolute w-100 h-100" style="top: 0; left: 0;" />
+                <button title="Reproducir" role="button" id="btnVod" aria-label="Play"
+                    class="btn shadow-none position-absolute"
+                    style="top:50%; left:50%; transform: translate(-50%,-50%); z-index: 111;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="75" height="75" fill="#000" class="bi bi-play-fill"
+                        viewBox="0 0 16 16">
+                        <path
+                            d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z" />
+                    </svg>
+                </button> -->

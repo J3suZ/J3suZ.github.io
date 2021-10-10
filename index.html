@@ -1,0 +1,654 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./resources/img/favicon.ico" type="JPG/JPEG/PNG">
+    <link rel="stylesheet" href="css/boostrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>CRVideoGOL - ¡Promocionando Talentos!</title>
+</head>
+
+<body>
+    <div id="loaderSpinner" class="loader"></div>
+    <div id="loaderText" class="loader-text text-center">
+        <h4 class="text-primary">
+            Cargando pagina
+            ¡Por favor espere!
+        </h4>
+    </div>
+
+    <!--------- MAIN container --------->
+
+    <div id="container" class="wrapper container-lg overflow-hidden">
+
+        <!--------- Header section! --------->
+
+        <header id="header" class="navbar px-md-2 justify-content-between align-items-center">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img class="navbar-img" src="./resources/img/crvideogo-icon.png" alt="CRVideoGOL Coaching">
+                <h5 class="text-primary fw-bolder">CRVideoGOL</h5>
+            </a>
+            <button class="btn_menu mb-2" id="btnMenu" role="button">
+                <span class="bg-secondary"></span>
+                <span class="bg-secondary"></span>
+                <span class="bg-secondary"></span>
+            </button>
+            <ul class="nav">
+                <button role="button" title="Cerrar menú" id="btnCloseMenu" class="btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-x-lg" viewBox="0 0 16 16">
+                        <path
+                            d="M1.293 1.293a1 1 0 0 1 1.414 0L8 6.586l5.293-5.293a1 1 0 1 1 1.414 1.414L9.414 8l5.293 5.293a1 1 0 0 1-1.414 1.414L8 9.414l-5.293 5.293a1 1 0 0 1-1.414-1.414L6.586 8 1.293 2.707a1 1 0 0 1 0-1.414z" />
+                    </svg>
+                </button>
+                <li class="nav-link nav-list">
+                    <a class="btn_scroll_menu text-decoration-none text-primary fw-bolder" id="menu_inicio"
+                        href="">Inicio</a>
+                </li>
+                <li class="nav-link nav-list">
+                    <a class="btn_scroll_menu text-decoration-none text-primary fw-bold" id="menu_vods"
+                        href="">Videos</a>
+                </li>
+                <li class="nav-link nav-list">
+                    <a class="btn_scroll_menu text-decoration-none text-primary fw-bold" id="menu_servicios"
+                        href="">Sevicios</a>
+                </li>
+                <li class="nav-link nav-list">
+                    <a class="btn_scroll_menu text-decoration-none text-primary fw-bold" id="menu_reco"
+                        href="">Recomendaciones</a>
+                </li>
+                <li class="nav-link nav-list">
+                    <a class="btn_scroll_menu text-decoration-none text-primary fw-bold" id="menu_contacto"
+                        href="">Contacto</a>
+                </li>
+            </ul>
+        </header>
+
+        <!--------- Hero Section here --------->
+
+        <main id="hero"
+            class="row px-sm-3 justify-content-between align-items-center my-sm-2 text-center text-md-start">
+            <div class="col-md-5">
+                <h5 class="fw-bold text-primary">
+                    <span class="text-secondary display-6 fw-bolder">¡</span>
+                    Promocionando talentos
+                    <span class="text-secondary display-6 fw-bolder">!</span>
+                </h5>
+                <p>
+                    Somos una Agencia de Scouting.
+                    Nos Dedicamos a captación, seguimiento y
+                    promoción de futbolistas profesionales,
+                    Juveniles y prejuveniles en toda Latinoamérica.
+
+                    Ofrecemos, Promoción a través de producción de Videos,
+                    Seguimiento y análisis de rendimiento, marketing, asesorías,
+                    coaching y video análisis de Equipos.
+
+                    Nuestra Visión es ser el vehiculo en el crecimiento profesional
+                    Del futbolista y junto a nuestro acompañamiento y
+                    satisfacción de nuestro trabajo alcance la evolución en su
+                    Carrera como futbolista.
+                </p>
+                <div class="row gap-sm-1 px-2 justify-content-center justify-content-md-start">
+                    <button class="col-sm-5 btn btn-primary shadow mb-2 btn_modal_open-info-contact">Contactanos</button>
+                    <a href="#hero" class="col-sm-5 btn btn-outline-primary shadow mb-2">Mira nuestro
+                        trabajo</a>
+                </div>
+            </div>
+            <div class="col-md-6 position-relative container_vod-presentation">
+                <video id="presentationVod" class="rounded w-100 shadow"
+                    src="./resources/vods/crvideogol-presentation.mp4" muted preload loop autoplay></video> 
+                    <!-- Meaby here... -->
+        </main>
+
+        <!--------- Links Redes Sociales --------->
+
+        <div class="row align-items-center justify-content-center">
+            <div class="col-sm-4">
+                <div class="text-center text-dark mb-1">
+                    <div class="row justify-content-around align-items-center g-sm-1">
+                        <a target="_blank" href="https://www.instagram.com/crvideogol/" type="button" role="button"
+                            class="btn col-2 shadow-none"><i class="fab fa-instagram-square display-6"></i></a>
+                        <a target="_blank" href="https://twitter.com/crvideogol" type="button" role="button"
+                            class="btn col-2 shadow-none"><i class="fab fa-twitter display-6"></i></a>
+                        <a target="_blank" href="www.youtube.com/channel/UCy1lbA3Mm60Oe2T1-c2rwug" type="button"
+                            role="button" class="btn col-2 shadow-none"><i class="fab fa-youtube display-6"></i></a>
+                        <a target="_blank" href="https://www.facebook.com/Crvideogol-2395296040703860" type="button"
+                            role="button" class="btn col-2 shadow-none"><i
+                                class="fab fa-facebook-square display-6"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--------- Ad's banner --------->
+
+        <div class="container-lg my-1 rounded">
+            <img src="./resources/img/adidad-ad.jpg" class="w-100" height="30%" style="max-height: 300px;" alt=""
+                srcset="">
+        </div>
+
+        <!--------- Slider for videos --------->
+
+        <div id="videos" class="slider px-lg-5 my-5">
+            <div class="row my-sm-4 flex-column-reverse align-items-center">
+                <button id="addVod" class="btn btn-primary col-sm-4 mx-1">Añadir un nuevo VOD
+                </button>
+                <h3 class="text-primary text-center" style="cursor:pointer;" id="openVodsSeccion">
+                    <span class="fw-bolder display-6 text-info">¡</span>
+                    <span class="text-decoration-underline"> Mira algo de nuestro trabajo </span>
+                    <span class="display-6 fw-bolder text-info">!</span>
+                </h3>
+            </div>
+            <div class="slider_container px-2">
+
+                <!--------- Btn prev --------->
+
+                <button class="slider_btn slider_btn-prev btn shadow-none" type="button" role="button"
+                    aria-label="Anterior" id="slider_prev">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-chevron-left text-info" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z" />
+                    </svg>
+                </button>
+
+                <!--------- slider container list elements --------->
+
+                <section id="sliderContainerList" class="slider_list-container">
+                    <div class="slider_element" style="max-height: 30%; overflow: auto;">
+                        <div class="card mx-1 shadow">
+                            <iframe class="w-100 card-img-bottom" height="200px"
+                                src="https://www.youtube.com/embed/XH8DXJoGAfo" title="YouTube video player"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <div class="slider_element" style="max-height: 300px; overflow: auto;">
+                        <div class="card mx-sm-1 shadow">
+                            <iframe class="w-100 card-img-bottom" height="200px"
+                                src="https://www.youtube.com/embed/42P30asJYyU" title="YouTube video player"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <div class="slider_element" style="max-height: 300px; overflow: auto;">
+                        <div class="card mx-sm-1 shadow">
+                            <iframe class="w-100 card-img-bottom" height="200px"
+                                src="https://www.youtube.com/embed/r39M9k9o89c" title="YouTube video player"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <div class="slider_element" style="max-height: 300px; overflow: auto;">
+                        <div class="card mx-sm-1 shadow">
+                            <iframe class="w-100 card-img-bottom" height="200px"
+                                src="https://www.youtube.com/embed/42P30asJYyU" title="YouTube video player"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </section>
+
+                <!--------- Btn next --------->
+
+                <button class="slider_btn slider_btn-next btn shadow-none" id="slider_next" role="button"
+                    aria-label="Siguiente">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-chevron-right text-info" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                    </svg>
+                </button>
+            </div>
+            <div class="indicators" role="tablist"></div>
+        </div>
+
+        <!--------- Ad's banner --------->
+
+        <div class="container-lg my-1 rounded">
+            <img src="./resources/img/adidad-ad.jpg" class="w-100" height="30%" style="max-height: 300px;" alt=""
+                srcset="">
+        </div>
+
+        <!--------- Services-products-section --------->
+
+        <div id="servicios" class="container-sm py-2 my-5">
+            <div class="row mb-1">
+                <h3 class="text-center text-primary">
+                    <span class="fw-bolder display-6 text-info">¿</span>
+                    <span class="text-decoration-underline"> Qué ofrecemos </span>
+                    <span class="display-6 fw-bolder text-info">?</span>
+                </h3>
+            </div>
+            <div class="row justify-content-around">
+                <div class="col-lg-6">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="card mb-1 shadow text-center">
+                                <div class="card-header">
+                                    <img class="w-100" src="./resources/svgs/coaching.svg" style="height: 150px;">
+                                </div>
+                                <div class="card-body d-flex flex-column align-items-center justify-content-between"
+                                    style="min-height: 320px;">
+                                    <h4 class="card-title">
+                                        ¡Coaching!
+                                        </h3>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad in quibusdam
+                                            recusandae possimus? Repellat ipsa quisquam, dignissimos facilis cum soluta?
+                                        </p>
+                                        <button class="btn btn-primary w-100">Mas informacion...</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card mb-1 shadow text-center">
+                                <div class="card-header">
+                                    <img src="./resources/svgs/analisis.svg" style="height: 150px;" class="w-100">
+                                </div>
+                                <div class="card-body d-flex flex-column align-items-center justify-content-between"
+                                    style="min-height: 320px;">
+                                    <h4 class="card-title">¡Marketing y asesorias!</h4>
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad in quibusdam
+                                        recusandae possimus? Repellat ipsa quisquam, dignissimos facilis cum soluta?
+                                    </p>
+                                    <button class="btn btn-primary w-100">Mas informacion...</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="card mb-1 shadow text-center">
+                                <div class="card-header">
+                                    <img src="./resources/svgs/editing.svg" style="height: 150px;" class="w-100">
+                                </div>
+                                <div class="card-body d-flex flex-column align-items-center justify-content-between"
+                                    style="min-height: 320px;">
+                                    <h4 class="card-title">¡Seguimiento y analisis de rendimiento!</h4>
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad in quibusdam
+                                        recusandae possimus? Repellat ipsa quisquam, dignissimos facilis cum soluta?
+                                    </p>
+                                    <button class="btn btn-primary w-100">Mas informacion...</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="card mb-1 shadow text-center">
+                                <div class="card-header">
+                                    <img src="./resources/svgs/videos.svg" style="height: 150px;" class="w-100">
+                                </div>
+                                <div class="card-body d-flex flex-column align-items-center justify-content-between"
+                                    style="min-height: 310px;">
+                                    <h4 class="card-title">¡Promoción a través de producción de Videos!</h4>
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad in quibusdam
+                                        recusandae possimus? Repellat ipsa quisquam, dignissimos facilis cum soluta?
+                                    </p>
+                                    <button class="btn btn-primary w-100">Mas informacion...</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--------- Recomendations-section --------->
+
+        <div id="recomendaciones" class="container-lg my-5">
+            <div class="row px-sm-3 justify-content-center align-items-center my-sm-2 container-reco">
+                <div class="col-sm-8 col-lg-5">
+                    <h5 class="text-primary fw-bolder">
+                        <span class="fw-bolder display-6 text-info">¡</span>
+                        <span class="text-decoration-underline"> Recomendaciones </span>
+                        <span class="display-6 fw-bolder text-info">!</span>
+                    </h5>
+                    <p>
+                        A lo largo de nuestra trayectoria trabajando con multiples futbolistas.
+                        Estos han dejado su opinion acerca de nuestro y el como lo hemos realizamos.
+                    </p>
+                    <div class="row px-2 justify-content-between">
+                        <button class="btn btn-primary rounded shadow mb-2 ">Contactanos!</button>
+                    </div>
+                </div>
+
+                <div class="col-lg-7">
+                    <div class="row text-center mb-sm-1">
+                        <span class="text-info fw-bolder">
+                            Aqui tienes las palabras de algunos de ellos
+                        </span>
+                    </div>
+                    <div class="mt-3">
+                        <div class="position-relative px-sm-5">
+
+                            <!--------- BTN PREV --------->
+
+                            <button title="Anterior" class="slider_btn slider_btn-prev btn shadow-none" type="button"
+                                role="button" aria-label="Anterior" id="sliderReco_prev">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-chevron-left text-info" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z" />
+                                </svg>
+                            </button>
+
+                            <!--------- Slider vods --------->
+
+                            <section id="sliderRecomendations" class="w-100">
+                                <video src="./resources/vods/crvideogol-presentation.mp4" preload="true" autoplay loop muted></video>
+                                <video src="./resources/vods/crvideogol-presentation.mp4" preload="true" autoplay loop muted></video>
+                                <video src="./resources/vods/crvideogol-presentation.mp4" preload="true" autoplay loop muted></video>
+                            </section>
+
+                            <!--------- BTN NEXT --------->
+
+                            <button title="Siguiente" class="slider_btn slider_btn-next btn shadow-none"
+                                id="sliderReco_next" role="button" aria-label="Siguiente">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-chevron-right text-info" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                                </svg>
+                            </button>
+                        </div>
+                        <div id="recoIdenticators" class="indicadores"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--------- Ad's banner --------->
+
+        <div class="container-lg my-1 rounded">
+            <img src="./resources/img/adidad-ad.jpg" class="w-100" height="30%" style="max-height: 300px;" alt=""
+                srcset="">
+        </div>
+    </div>
+
+    <!--------- FOOTER SECCION FROM HERE! --------->
+
+    <footer id="contacto" class="footer bg-dark mt-3 shadow">
+        <div class="container-lg pt-3">
+            <div class="row nav-tabs">
+                <div class="col-sm-6 col-lg-4 text-center text-md-start">
+                    <div class="card border-dark bg-dark">
+                        <div class="card-header badge text-secondary">
+                            <h5 class="text-decoration-underline">¿Cual es nuestro objetivo?</h5>
+                        </div>
+                        <p class="text-light card-body fw-normal text-white text-md-center">
+                            Nuestra visión es ser vehículo en el crecimiento profesional
+                            del futbolista y junto a nuestro acompañamiento y
+                            satisfaccion de nuestro trabajo alcanze la evolucion en su
+                            carrera como futbolista.
+                        </p>
+                    </div>
+
+                </div>
+                <div class="col-sm-6 col-lg-4 mb-2">
+                    <h5 class="text-secondary text-decoration-underline text-center">¿Cómo puedo contactarlos?</h5>
+                    <ul class="row align-items-center text-center gap-2 list-group">
+                        <li class="fw-bolder text-white fs-6">
+                            Puedes contactar con nosotros, de las
+                            siguientes maneras:
+                        </li>
+                        <a class="fs-5 text-info" target="_blank" href="https://twitter.com/crvideogol">Vía Twitter
+                            <i class="fab fa-twitter fs-5 text-secondary"></i>
+                        </a>
+                        <a class="fs-5 text-info" target="_blank" href="https://twitter.com">Vía What's App
+                            <i class="fab fa-whatsapp fw-bolder fs-5 text-secondary"></i>
+                        </a>
+                        <a class="fs-5 text-info" target="_blank" href="https://www.instagram.com/crvideogol/">Vía
+                            Instagram
+                            <i class="fab fa-instagram fw-bolder fs-5 text-secondary"></i>
+                        </a>
+                    </ul>
+                </div>
+                <div class="col-lg-4 mb-2">
+                    <div class="card border-dark bg-dark text-start">
+                        <div class="card-header badge text-secondary">
+                            <h5 class="text-decoration-underline">¡Sobre nosotros!</h5>
+                        </div>
+                        <div class="card-body fw-normal text-white text-md-center">
+                            <p>
+                                CRvideoGOL, Lorem ipsum dolor sit amet consectetur adipisicing elit. Non ratione aliquid, qui exercitationem corporis, dignissimos ipsum et eligendi optio esse molestias vero? At illo atque eum autem neque, amet ipsam?
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <h5 class="text-secondary text-center mt-sm-2">!Siguenos en nuestras redes sociales!</h5>
+            </div>
+            <div class="row align-items-center justify-content-center pb-2">
+                <div class="col-sm-4 nav-tabs">
+                    <div class="row justify-content-around align-items-center g-sm-1 ">
+                        <a target="_blank" href="https://www.instagram.com/crvideogol/" type="button" role="button"
+                            class="btn col-2 shadow-none">
+                            <i class="fab fa-instagram-square display-6 text-white"></i>
+                        </a>
+                        <a target="_blank" href="https://twitter.com/crvideogol" type="button" role="button"
+                            class="btn col-2 shadow-none">
+                            <i class="fab fa-twitter display-6 text-white"></i>
+                        </a>
+                        <a target="_blank" href="www.youtube.com/channel/UCy1lbA3Mm60Oe2T1-c2rwug" type="button"
+                            role="button" class="btn col-2 shadow-none">
+                            <i class="fab fa-youtube display-6 text-white"></i>
+                        </a>
+                        <a target="_blank" href="https://www.facebook.com/Crvideogol-2395296040703860" type="button"
+                            role="button" class="btn col-2 shadow-none">
+                            <i class="fab fa-facebook-square display-6 text-white"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-sm-4">
+                    <h5 class="text-center text-secondary fs-6">© Copyright <span class="fw-bolder text-white">-</span> <span class="text-info">CRVideoGOL</span>
+                    </h5>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!--------- SECCION PARA LOS VIDEOS --------->
+
+      <div id="containerVods" class="position-fixed bg-light" style="z-index: 111111111111;width:100vw; height: 100vh; left: 0; top: 0;">
+        <div class="container-lg p-2" >
+            <div class="row flex-column align-items-center mb-1">
+                <h3 class="col-md-4 text-center text-primary text-decoration-underline fw-bolder">Busca a un jugador</h3>
+                <div class="col-md-4">
+                    <input class="form form-control" placeholder="Ej: Yeferson Soteldo" type="text" name="search" id="search">
+                </div>
+            </div>
+            <div class="row container_vods" style="overflow: scroll; height: 80vh;">
+                <div class="col-sm-6 col-lg-4 shadow card">
+                    <div class="card-header">
+                        <h5 class="card-title">Jugador</h5>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-subtitle">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas nesciunt magni excepturi animi molestiae esse, asperiores perspiciatis, nemo, beatae laborum officia dicta neque odit ex? Ipsa voluptas dignissimos dicta sed, neque hic id. Qui delectus sequi corporis reiciendis, earum dolor?
+                        </p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4 shadow card">
+                    <div class="card-header">
+                        <h5 class="card-title">Jugador</h5>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-subtitle">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas nesciunt magni excepturi animi molestiae esse, asperiores perspiciatis, nemo, beatae laborum officia dicta neque odit ex? Ipsa voluptas dignissimos dicta sed, neque hic id. Qui delectus sequi corporis reiciendis, earum dolor?
+                        </p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4 shadow card">
+                    <div class="card-header">
+                        <h5 class="card-title">Jugador</h5>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-subtitle">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas nesciunt magni excepturi animi molestiae esse, asperiores perspiciatis, nemo, beatae laborum officia dicta neque odit ex? Ipsa voluptas dignissimos dicta sed, neque hic id. Qui delectus sequi corporis reiciendis, earum dolor?
+                        </p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4 shadow card">
+                    <div class="card-header">
+                        <h5 class="card-title">Jugador</h5>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-subtitle">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas nesciunt magni excepturi animi molestiae esse, asperiores perspiciatis, nemo, beatae laborum officia dicta neque odit ex? Ipsa voluptas dignissimos dicta sed, neque hic id. Qui delectus sequi corporis reiciendis, earum dolor?
+                        </p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4 shadow card">
+                    <div class="card-header">
+                        <h5 class="card-title">Jugador</h5>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-subtitle">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas nesciunt magni excepturi animi molestiae esse, asperiores perspiciatis, nemo, beatae laborum officia dicta neque odit ex? Ipsa voluptas dignissimos dicta sed, neque hic id. Qui delectus sequi corporis reiciendis, earum dolor?
+                        </p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4 shadow card">
+                    <div class="card-header">
+                        <h5 class="card-title">Jugador</h5>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-subtitle">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas nesciunt magni excepturi animi molestiae esse, asperiores perspiciatis, nemo, beatae laborum officia dicta neque odit ex? Ipsa voluptas dignissimos dicta sed, neque hic id. Qui delectus sequi corporis reiciendis, earum dolor?
+                        </p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4 shadow card">
+                    <div class="card-header">
+                        <h5 class="card-title">Jugador</h5>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-subtitle">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas nesciunt magni excepturi animi molestiae esse, asperiores perspiciatis, nemo, beatae laborum officia dicta neque odit ex? Ipsa voluptas dignissimos dicta sed, neque hic id. Qui delectus sequi corporis reiciendis, earum dolor?
+                        </p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4 shadow card">
+                    <div class="card-header">
+                        <h5 class="card-title">Jugador</h5>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-subtitle">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas nesciunt magni excepturi animi molestiae esse, asperiores perspiciatis, nemo, beatae laborum officia dicta neque odit ex? Ipsa voluptas dignissimos dicta sed, neque hic id. Qui delectus sequi corporis reiciendis, earum dolor?
+                        </p>
+                    </div>
+                </div>
+            </div>                
+            <button class="btn shadow-none position-absolute" style="right: 5%; top: -3%;" id="btnCloseVodsSeccion" title="Cerrar sección"><h1 class="display-1 ">&times;</h1></button>
+        </div>
+    </div>
+
+    <!-- Modal add new VOD -->
+
+    <div id="modal" class="position-fixed d-flex justify-content-center align-items-center" style="height: 100vh; width: 100%; left: 0;
+    top: 0; background: #0005; z-index: 1111111;" data-hidden="true">
+        <div id="modal_content" class="card shadow position-relative" style="min-width: 300px;">
+            <div class="card-header">
+                <h5 class="text-secondary">Agrega un nuevo video:</h5>
+            </div>
+            <div class="card-body">
+                <div class="card-title">
+                    <h5 class="text-info fs-6">Coloca tu link del video que quieras agregar aqui:</h5>
+                </div>
+                <div class="row">
+                    <input class="form form-control mb-2" type="text" name="vod" id="vodElement"
+                        placeholder='Por ejemplo: <iframe></iframe>'>
+                    <button id="sendData" role="button" aria-label="Enviar información"
+                        class="btn btn-primary">Enviar</button>
+                </div>
+            </div>
+            <button class="btn shadow-none position-absolute btn_close_modal" title="Cerrar ventana"
+                style="right: 0px; top: -15px;"><span class="display-6">&times;</span></button>
+        </div>
+        <button class="btn shadow-none position-absolute btn_close_modal" title="Cerrar ventana"
+            style="right: 10px; top: -15px;"><span class="display-1">&times;</span></button>
+    </div>
+
+    <!--------- Modal para CONTACTO Y MAS INFORMACION --------->
+
+    <div id="modalInfoContact" class="position-fixed d-flex justify-content-center align-items-center" style="height: 100vh; width: 100%; left: 0;
+    top: 0; background: #0005; z-index: 1111111;" data-hidden="true">
+        <div id="modalInfoContat_content" class="row rounded p-2 bg-white shadow position-relative" style="width: 500px;">
+            <div class="col-sm-4">
+                <img src="./resources/svgs/socialmedia.svg" width="100%" height="100%">
+            </div>
+            <div class="col-sm-8 p-2">
+                <div class="card">
+                    <div class="card-header">
+                        <h5 class="fw-bolder text-primary card-title">
+                            Para contactar con nosotros u obtener más información acerca de nuestros servicios.
+                            Puedes hacerlo mediante estas plataformas: 
+                        </h5>
+                        <p class="text-info">
+                            <a href="" target="_blank">Facebook</a>,
+                            <a href="" target="_blank">Twitter</a>,
+                            <a href="" target="_blank">YouTube</a>,
+                            <br>
+                            <a href="" target="_blank">What's App</a>
+                            <span class="text-dark opacity-50 fw-bolder">
+                                (Con esta nos contactaras directamente mediante una mensajería de texto.)
+                            </span>
+                        </p>
+                    </div>
+                    <div class="card-body">
+                        <div class="row align-items-center justify-content-start gap-4">
+                            <a target="_blank" href="https://www.instagram.com/crvideogol/" type="button" role="button"
+                            class="btn col-2 shadow-none">
+                            <i class="fab fa-instagram-square display-6 text-secondary"></i>
+                        </a>
+                        <a target="_blank" href="https://twitter.com/crvideogol" type="button" role="button"
+                            class="btn col-2 shadow-none">
+                            <i class="fab fa-twitter display-6 text-secondary"></i>
+                        </a>
+                        <a target="_blank" href="www.youtube.com/channel/UCy1lbA3Mm60Oe2T1-c2rwug" type="button"
+                            role="button" class="btn col-2 shadow-none">
+                            <i class="fab fa-youtube display-6 text-secondary"></i>
+                        </a>
+                        <a class="btn col-2 shadow-none" target="_blank" href="https://twitter.com">
+                            <i class="fab fa-whatsapp display-6 text-secondary"></i>
+                        </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="btn shadow-none position-absolute btn_close_modal-info-contact" title="Cerrar ventana" style="right: 0px; top:-35px; width: 60px; height: 60px;">
+                <span style="font-size: 60px;">&times;</span>
+            </button>
+        </div>
+        <button class="btn shadow-none d-none d-sm-block position-absolute btn_close_modal-info-contact" title="Cerrar ventana"
+            style="right: 10px; top: -15px;"><span class="display-1">&times;</span></button>
+    </div>
+
+    <!--------- Scripts --------->
+    <script src="https://kit.fontawesome.com/a98a5f8671.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.7/glider.min.js"></script>
+    <script src="/css/boostrap/js/bootstrap.min.js"></script>
+    <script src="src/main.js"></script>
+    <script src="src/slider.js"></script>
+    <script src="src/vods_data.js"></script>
+</body>
+
+</html>

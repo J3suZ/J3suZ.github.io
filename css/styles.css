@@ -1,0 +1,418 @@
+/*----------- ESTILOS DE SELECCION GLOBAL Y BODY -----------*/
+
+body::-webkit-scrollbar{
+    width: 8px;
+    padding: 2px;
+}
+body::-webkit-scrollbar-track{
+    background-color: none;
+}
+body::-webkit-scrollbar-thumb {
+    background: var(--bs-info); 
+    border-radius: 10px;
+}
+body::-webkit-scrollbar-thumb:hover{
+    background: var(--bs-secondary); 
+}
+
+*::selection{
+    background-color: var(--bs-primary);
+    color: #fff;
+}
+
+/*----------- SET THE BOOTSTRAP COLORS -----------*/
+.wrapper{
+    scroll-behavior: smooth;
+}
+/*----------- Estilos para el btn del vod -----------*/
+#btnVod > svg{
+    fill:var(--bs-primary);
+}
+#posterVod{
+    cursor: pointer;
+}
+#posterVod:hover + #btnVod > svg, #btnVod > svg:hover{
+    transition: fill .25s ease;
+    fill:var(--bs-info);
+}
+/*----------- Estilos del header onScrolled -----------*/
+#header{
+    transition: padding .25s ease, height .25s ease;
+}
+#header[data-scrolled="true"]{
+    background: #fafafa;
+    box-shadow: 0 0 10px #0002;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+    opacity: 1;
+    transition: opacity .25s ease;
+    padding: 0 10px;
+    z-index: 111111;
+}
+
+#header[data-scrolled="true"] .navbar-brand > .navbar-img{
+    width: 70px;
+    height: 70px;
+    transition: width .25s ease, height .25s ease;
+}
+
+#header[data-scrolled="false"]{
+    background: #fafafada;
+    box-shadow: 0 0 10px #0002;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+    opacity: 1;
+    transition: opacity .25s ease;
+    padding: 0 10px;
+    z-index: 1111111;
+    height: 60px;
+}
+
+#header[data-scrolled="false"] .navbar-brand > .navbar-img{
+    width: 50px;
+    height: 50px;
+    transition: width .25s ease, height .25s ease;
+}
+
+/*----------- Estilos del loader -----------*/
+
+.loader{
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 50%;
+    border:10px solid #7a7a7a6b;
+    border-top: 10px solid var(--bs-primary);
+    animation: spinner 1s ease infinite;
+}
+@keyframes spinner {
+    to{
+        transform: translate(-50%,-50%) rotate(360deg);
+    }
+}
+
+.loader-text{
+    position: fixed;
+    left: 50%;
+    top: 58%;
+    transform: translate(-50%,-50%);
+}
+#container{
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .25s .25s ease, visibility .25s .25s ease;
+}
+#container[data-show="true"]{
+    opacity: 1;
+    visibility: visible;
+}
+
+/*----------- Algunos estilos para el NAV -----------*/
+
+.navbar-img{
+    width: 100px;
+    height: 100px;
+}
+.card-video{
+    width: 100%;
+    max-width: 400px;
+    height: 300px;
+}
+.btn_menu{
+    position: relative;
+    width:40px;
+    height: 40px;
+    border-radius: 4px;
+    border: none;
+    background: none;
+    display: none;
+}
+@media screen and (max-width:450px){
+    .navbar-img{
+        width: 65px;
+        height: 65px;
+    }
+    .btn_menu{
+        height: 30px;
+        width: 30px;
+    }
+}
+.nav-list > a{
+    position: relative;
+}
+.nav-list > a::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background: var(--bs-secondary);
+    bottom: 0%;
+    left: 50%;
+    transform: translateX(-50%) scale(0);
+    transition: transform .25s ease,opacity .25s ease;
+    opacity: 0;
+}
+.nav-list:hover > a::before, a:focus::before{
+    transform-origin: center;
+    transform: translateX(-50%) scaleX(1);
+    opacity: 1;
+}
+
+/*----------- Un breakpoint para el menu/nav -----------*/
+
+@media screen and (max-width:796px){
+    #container.menu-open{
+        filter: brightness(10);
+    }
+    .btn_menu{
+        display: block;
+        position: relative;
+        z-index: 111111;
+        overflow: hidden;
+    }
+    .btn_menu > span{
+        width: 100%;
+        height: 4px;
+        position: absolute;
+        transition: transform .25s ease-in;
+        left: 0;
+    } 
+    .btn_menu > span:nth-child(1){
+        transform: matrix(1, 0, 0, 1, 0, -10);
+    }
+    .btn_menu > span:nth-child(2){
+        transform: matrix(1,0,0, 1, 0, 0);
+    }
+    .btn_menu > span:nth-child(3){
+        transform: matrix(1, 0, 0, 1, 0, 10);
+    }
+    .btn_menu.active > span:nth-child(1){
+        transform: matrix(0.75, 0.7071, -0.7071, 1, 0, 0);
+    }
+    .btn_menu.active > span:nth-child(2){
+        transform: matrix(1,0,0, 1, 100, 0);
+    }
+    .btn_menu.active > span:nth-child(3){
+        transform: matrix(0.75, -0.7071, 0.7071, 1, 0, -0);
+    }
+    .btn_menu.active + .nav{
+        visibility: visible;
+        transform: translate(-50%,0%);
+        box-shadow: 0 0 0 400px #0005;
+        opacity: 1;
+    }
+    .btn_menu.active + .nav > .nav-list{
+        transform: translateY(0);
+        opacity: 1; 
+    }
+    .nav{
+        transition: transform .25s ease-in, opacity .25s ease-in, visibility .25s ease-in;
+        opacity: 0;
+        visibility: hidden;
+        position: fixed;
+        transform: translate(-50%,7%);
+        width: 100%;
+        max-width: 500px;
+        flex-flow: column;
+        justify-content: space-evenly;
+        align-items:center;
+        background: #fafafa;
+        bottom: 0;
+        left: 50%;
+        height: 500px;
+        font-size: 30px;
+        border-radius: 15px 15px 0 0;
+        z-index: 1000;
+    }
+    .nav > #btnCloseMenu{
+        display: block;
+    }
+    .nav-list{
+        position: relative;
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    .nav-list:nth-child(1){
+        transition:opacity .25s .25s ease, transform .25s .25s ease;
+    }
+    .nav-list:nth-child(2){
+        transition:opacity .25s .25s ease, transform .40s .25s ease;
+    }
+    .nav-list:nth-child(3){
+        transition:opacity .25s .25s ease, transform .55s .25s ease;
+    }
+    .nav-list:nth-child(4){
+        transition:opacity .25s .25s ease, transform .75s .25s ease;
+    }
+    .nav-list:nth-child(5){
+        transition:opacity .25s .25s ease, transform 1s .25s ease;
+    }
+    
+    .nav-list::before,.nav-list::after{
+        content: "";
+        background: var(--bs-primary);
+        height: 4px;
+        width: 20px;
+        position: absolute;
+        opacity: 0;
+        transition:transform .25s ease, opacity .25s ease;
+    }
+    .nav-list::before{
+        left: -5%;
+        transform: translateX(-100%);
+        top: 50%;
+    }
+    .nav-list::after{
+        right: -5%;
+        transform: translateX(100%);
+        top: 50%;
+    }
+    .nav-list:hover::before, .nav-list:hover::after{
+        opacity: 1;
+        transform: translateX(0%);
+    }
+    .nav-list > a::before{
+        opacity: 1;
+        transform: translateX(-50%) scale(1);
+    }
+    .nav-list:hover > a::before{
+        transform: translateX(-50%) scaleX(0);
+        opacity: 0;
+    }
+}
+
+/*----------- Estilos btnCloseMenu -----------*/
+
+#btnCloseMenu{
+    display: none;
+    box-shadow: none;
+}
+
+#btnCloseMenu > svg{
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+}
+
+/*----------- FOOTER's Style when document is ready -----------*/
+
+#footer{
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .25s .25s ease, visibility .25s .25s ease;
+}
+#footer[data-show]{
+    opacity: 1;
+    visibility: visible;
+}
+
+/*----------- Estilos del slider -----------*/  
+
+.slider_container{
+    position: relative;
+}
+
+.slider_btn{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1111;
+}
+.slider_btn > svg{
+    width: 50px;
+    height: 50px;
+}
+.slider_btn-prev{
+    left: -5%;
+}
+.slider_btn-next{
+    right: -5%;
+}
+
+/*----------- Arrow svg styles -----------*/
+
+
+@media screen and (max-width:991px) {
+    .arrow_svg{
+        position: relative;
+        left: 40%;
+        transform: rotate(90deg) translateY(-50%);
+    }
+    .container-reco{
+        text-align:center;
+    }
+}
+
+/*----------- Estilos para la ventana MODAL -----------*/
+
+#modal{transition: opacity .25s ease, visibility .25s ease;}
+#modal_content{transform: translateY(-100%) scale(.7); transition: transform .25s ease;}
+#modal[data-hidden="true"]{visibility: hidden;opacity: 0;}
+#modal[data-hidden="false"]{visibility: visible;opacity: 1;}
+#modal[data-hidden="false"] > #modal_content{transform: translateY(0) scale(1);}
+
+/*----------- CONTAINER VODS STYLES -----------*/
+
+/* #containerVods{
+    transform: translate(100%) scale(1);
+} */
+
+#containerVods.appear{
+    animation: appear 1s ease forwards;
+}
+#containerVods.desappear{
+    animation: desappear 1s ease forwards;
+}
+
+@keyframes appear {
+    0%{
+        transform: translate(100%) scale(1);
+    }
+    50%{
+        transform: translate(0%) scale(.8);
+    }
+    100%{
+        transform: translate(0) scale(1);
+    }
+}
+@keyframes desappear {
+    50%{
+        transform: translate(0%) scale(.8);
+    }
+    100%{
+        transform: translate(100%) scale(1);
+    }
+}
+/*----------- Container VODS styles -----------*/
+
+.container_vods::-webkit-scrollbar{
+    width: 8px;
+    padding: 2px;
+}
+.container_vods::-webkit-scrollbar-track{
+    background-color: none;
+}
+.container_vods::-webkit-scrollbar-thumb {
+    background: rgb(197, 197, 197); 
+    border-radius: 10px;
+}
+.container_vods::-webkit-scrollbar-thumb:hover{
+    background: rgb(145, 145, 145); 
+}
+
+/*----------- Estilos para el modal de CONTACTO E INFORMACION -----------*/
+
+#modalInfoContact{transition: opacity .25s ease, visibility .25s ease;}
+#modalInfoContat_content{transform: translateY(-100%) scale(.7); transition: transform .25s ease;}
+#modalInfoContact[data-hidden="true"]{visibility: hidden;opacity: 0;}
+#modalInfoContact[data-hidden="false"]{visibility: visible;opacity: 1;}
+#modalInfoContact[data-hidden="false"] > #modalInfoContat_content{transform: translateY(0) scale(1);}
