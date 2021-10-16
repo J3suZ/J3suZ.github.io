@@ -381,15 +381,15 @@ body::-webkit-scrollbar-thumb:hover{
 
 /*----------- CONTAINER VODS STYLES -----------*/
 
-/* #containerVods{
+#containerVods{
     transform: translate(100%) scale(1);
-} */
+}
 
 #containerVods.appear{
     animation: appear 1s ease forwards;
 }
 #containerVods.desappear{
-    animation: desappear 1s ease forwards;
+    transform: translate(100%) scale(1); visibility: hidden;
 }
 
 @keyframes appear {
@@ -401,14 +401,6 @@ body::-webkit-scrollbar-thumb:hover{
     }
     100%{
         transform: translate(0) scale(1);
-    }
-}
-@keyframes desappear {
-    50%{
-        transform: translate(0%) scale(.8);
-    }
-    100%{
-        transform: translate(130%) scale(1);
     }
 }
 /*----------- Container VODS styles -----------*/

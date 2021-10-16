@@ -5,7 +5,7 @@ require_once('./php/BD.php');
 
     class prueba{
 
-        static function Connection($element){
+        static function InsertVod($element){
             $query = new BD();
             $sql = "INSERT INTO vods_table (vods_element) VALUES (?)";
             $params = array($element);
@@ -14,7 +14,7 @@ require_once('./php/BD.php');
         }
     }
     if($element){
-        prueba::Connection($element);
+        prueba::InsertVod($element);
     }
 
 ?>
