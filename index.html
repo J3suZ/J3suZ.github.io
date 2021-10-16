@@ -573,12 +573,13 @@
                 <div class="card-title">
                     <h5 class="text-info fs-6">Coloca tu link del video que quieras agregar aqui:</h5>
                 </div>
-                <div class="row">
+                <form id="formNewVod" class="row">
                     <input class="form form-control mb-2" type="text" name="vod" id="vodElement"
                         placeholder='Por ejemplo: <iframe></iframe>'>
-                    <button id="sendData" role="button" aria-label="Enviar información"
-                        class="btn btn-primary">Enviar</button>
-                </div>
+                    <button id="sendData" role="button" type="submit" aria-label="Enviar información"
+                        class="btn btn-primary">Enviar
+                    </button>
+                </form>
             </div>
             <button class="btn shadow-none position-absolute btn_close_modal" title="Cerrar ventana"
                 style="right: 0px; top: -15px;"><span class="display-6">&times;</span></button>

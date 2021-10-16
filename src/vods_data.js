@@ -1,10 +1,18 @@
-$('#sendData').click(function () { 
-    $.ajax({
-        type: "POST",
-        url: "/php/add_elements.php",
-        data:"vod" = $('#vodElement').val(),
-        success: function (response) {
-            console.log(response);
-        }
-    });
+$('#sendData').click(function(){
+    var formElementVod = $('#formNewVod');
+    var data = new FormData(formElementVod[0]);
+    addVod(data);
 });
+const addVod = async (data) =>{
+    try {
+        const res = await fetch('php/add_elements.php',{
+            method: 'POST',
+            body: data,
+            headers: 'application/json'
+        });
+        const data = await res.json();
+        console.log(data);
+    }catch (error) {
+        console.log(error);
+    }
+};
