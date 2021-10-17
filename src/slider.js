@@ -1,5 +1,5 @@
 $(document).ready(function () {
-  new Glider(document.querySelector("#sliderContainerList"), {
+ /*  new Glider(document.querySelector("#sliderContainerList"), {
     slidesToShow: 1,
     slidesToScroll: 1,
     dots: ".indicators",
@@ -37,7 +37,7 @@ $(document).ready(function () {
           }
         }
       ]
-  });
+  }); */
 
   /*------------- ¡Slider de recomendaciones! -------------*/
 
